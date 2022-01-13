@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dollars-to-Cents</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h1 class="title" id="title">Dollars to Cents</h1>
+
+      <div class="content">
+
+        <div class="input-line">
+          <span>Enter the number of dollars</span>
+          <input type="number" id="input" placeholder="Entrada">
+        </div>
+
+        <button onclick="calculate()"> Converter </button>
+
+        <div id="output">
+          <div class="head-output">
+            <h2>Total cents </h2>
+            <h2 id="cents_value"> 0 </h2>
+          </div>
+          <table>
+            <tr>
+              <th>Coins</th>
+              <th>Count</th>
+            </tr>
+            <tr>
+              <td> Quarters (25 ¢) </td>
+              <td id="quarters_value"> 0 </td>
+            </tr>
+            <tr>
+              <td> Dimes (10 ¢) </td>
+              <td id="dimes_value"> 0 </td>
+            </tr>
+            <tr>
+              <td> Nickels (5 ¢) </td>
+              <td id="nickels_value"> 0 </td>
+            </tr>
+            <tr>
+              <td> Pennies (1 ¢) </td>
+              <td id="pennies_value"> 0 </td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
